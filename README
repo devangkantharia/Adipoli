@@ -1,1 +1,68 @@
 Adipoli jQuery Image Hover Plugin
+
+http://cube3x.com/adipoli-jquery-image-hover-plugin/
+
+How To Use
+
+Enabling image hover effect is very simple. Place the below references inside your head tag.
+<link href="css/adipoli.css" rel="stylesheet" type="text/css"/> <script src="js/jquery-1.7.1.js" type="text/javascript"></script> <script src="js/jquery.adipoli.min.js" type="text/javascript"></script>
+
+<link href="css/adipoli.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.7.1.js" type="text/javascript"></script>
+<script src="js/jquery.adipoli.min.js" type="text/javascript"></script>
+
+If you need image hover on an image with id ‘image1′, call adipoli plugin like this:
+<script> $('#image1').adipoli(); </script>
+
+<script>
+      $('#image1').adipoli();
+</script>
+
+Adding Options:
+$('#image1').adipoli({ 'startEffect' : 'normal', 'hoverEffect' : 'popout' });
+
+$('#image1').adipoli({
+    'startEffect' : 'normal',
+    'hoverEffect' : 'popout'
+});
+
+Available Options
+
+    startEffect : Default style of image
+    hoverEffect : Image style on mouse over
+    imageOpacity : opacity of image considered when start effect is transparent or overlay
+    animSpeed : Animation speed for the effect
+    fillColor : Overlay color
+    textColor : Text Color
+    overlayText : Default HTML to be displayed on overlay
+    slices : Number of slices for slice animations
+    boxCols : Number of boxes in a row for box animations
+    boxRows : Number of rows for box animations
+    popOutMargin : Margin of Image popout
+    popOutShadow : Shadow length of popout image. Shadow works for those browsers which support text-shadow css.
+
+Start Effects:
+
+    transparent
+    normal
+    overlay
+    grayscale
+
+Hover Effects:
+
+    normal
+    popout
+    sliceDown
+    sliceDownLeft
+    sliceUp
+    sliceUpLeft
+    sliceUpRandom
+    sliceUpDown
+    sliceUpDownLeft
+    fold
+    foldLeft
+    boxRandom
+    boxRain
+    boxRainReverse
+    boxRainGrow
+    boxRainGrowReverse
